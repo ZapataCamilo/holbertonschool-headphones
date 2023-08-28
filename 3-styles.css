@@ -1,0 +1,427 @@
+/* Resetting margins, paddings, and borders on all elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* Recommended box-sizing for consistency */
+}
+
+/* Resetting list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Resetting typography-related styles */
+body,
+h1,
+h2,
+h3,
+p {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* Setting variables */
+
+:root {
+    --color-primary: #FF6565;
+    --text-color-white: #ffffff;
+    --text-color-blue: #071629;
+    --menu-height: calc(3px * 3 + 6px * 2);
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro/SourceSansPro-Light.otf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src: url('./fonts/holberton/holberton_school-icon.ttf');
+}
+
+/* Header section */
+
+.background {
+    width: 100%;
+    height: 800px;
+    background: url(/images/headphones_hero_1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 161px;
+    height: 32px;
+    margin-top: 28px;
+    margin-left: 201px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.navbar-menu {
+    width: 255px;
+    height: 15px;
+    margin-top: 37px;
+    margin-right: 150px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 41px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.navbar-menu a {
+    color: var(--text-color-white);
+    font-family: 'Source Sans Pro';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.navbar-menu a:hover {
+    color: var(--color-primary);
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46.2%, 12%);
+    font-family: 'Source Sans Pro';
+    color: var(--text-color-white);
+}
+
+.header-title .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title-container .subtitle-1 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title-container .btn-primary {
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    background: var(--color-primary);
+    color: var(--text-color-white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    box-shadow: 0 3px 10px var(--text-color-blue);
+    margin-top: 40px;
+    margin-bottom: 65px;
+    cursor: pointer;
+}
+
+.title-container .btn-primary:hover {
+    background: #e05c5c;
+}
+
+.paragraph-1 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.wwd {
+    margin: 110px 200px;
+}
+
+.wwd-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-2 {
+    color: var(--text-color-blue);
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Source Sans Pro';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.paragraph-2 {
+    color: var(--text-color-blue);
+    text-align: center;
+    margin: 0 182px;
+    padding-bottom: 110px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.wwd-container .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards .wwd-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 29px;
+}
+
+.wwd-card .icon {
+    font-family: 'holberton_school-icon';
+    font-size: 111px;
+    color: var(--color-primary);
+}
+
+.wwd-card .wwd-subtitle {
+    color: var(--text-color-blue);
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.wwd-card .wwd-paragraph {
+    color: var(--text-color-blue);
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.results {
+    background: url("/images/headphones_hero_2.jpg");
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 141px 207px;
+    gap: 48px;
+}
+
+.results-container .title-1 {
+    margin-top: 141px;
+    font-family: 'Source Sans Pro';
+    color: var(--text-color-white);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.results-container .paragraph-1 {
+    margin: 0 175px;
+    font-family: 'Source Sans Pro';
+    color: var(--text-color-white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.results-container .stadistics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stadistics .penta {
+    width: 190px;
+    height: 190px;
+    background: url(/images/pentagone.png);
+    background-size: 190px 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 60px;
+}
+
+.penta .title-1 {
+    margin-top: 52px;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.penta .paragraph-1 {
+    white-space: nowrap;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.contact {
+    margin: 120px 533px 75px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container form input {
+    margin-bottom: 45px;
+    border-bottom: 1px solid var(--text-color-blue);
+    padding-bottom: 10px;
+    width: 335px;
+}
+
+.contact-container form input::placeholder {
+    color: var(--text-color-blue);
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-container .btn-primary {
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    background: var(--color-primary);
+    color: var(--text-color-white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contact-container form input:focus {
+    outline: none;
+}
+
+@media (max-width: 480px) {
+    .background {
+        width: 100%;
+        height: 869px;
+        background-repeat: no-repeat;
+        background-position: 33% -30px;
+        background-size: cover;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .logo {
+        margin: 29px 87px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        --x-width: calc(var(--menu-height) * 1.414);
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin: 33px 21px;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after,
+    .menu-icon .menu-btn {
+        content: "";
+        width: 36px;
+        height: 3px;
+        background: var(--text-color-white);
+        transform-origin: left center;
+        transition: all .2s ease-out;
+    }
+
+    .menu-icon .menu-btn {
+        appearance: none;
+        width: 27px;
+        outline: none;
+    }
+
+    .menu-icon:has(.menu-btn:checked)::before {
+        transform: rotate(45deg);
+        width: var(--x-width);
+        translate: 0 calc(3px / -2);
+    }
+
+    .menu-icon:has(.menu-btn:checked)::after {
+        transform: rotate(-45deg);
+        width: var(--x-width);
+        translate: 0 calc(3px / 2);
+    }
+
+    .menu-icon .menu-btn:checked {
+        opacity: 0;
+        width: 0;
+    }
+
+    .menu-icon:has(.menu-btn:checked)~.navbar-menu {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
