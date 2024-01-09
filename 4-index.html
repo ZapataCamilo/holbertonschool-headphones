@@ -1,141 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="4-styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="background">
-        <a href="#">
-          <img class="logo" src="/images/logo_headphones.png" alt="logo" />
-        </a>
-        <label class="menu-icon" for="menu-check">
-          <input type="checkbox" class="menu-btn" id="menu-check" />
-        </label>
-        <nav class="navbar-menu">
-          <a href="#">what we do</a>
-          <a href="#">our results</a>
-          <a href="#">contact us</a>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="header-title">
-        <div class="title-container">
-          <h1 class="title-1">Lorem ipsum dolor set amet lorem ipsum</h1>
-          <h2 class="subtitle-1">
-            Lorem ipsum dolor set amet lorem ipsum dolor set
-          </h2>
-          <button class="btn-primary">CALL TO ACTION</button>
-          <p class="paragraph-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-        </div>
-      </section>
-      <section class="wwd">
-        <div class="wwd-container">
-          <h1 class="title-2">What we do…</h1>
-          <p class="paragraph-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-          <div class="cards">
-            <div class="wwd-card">
-              <span class="icon"></span>
-              <h2 class="wwd-subtitle">Lorem ipsum</h2>
-              <p class="wwd-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="4-styles.css">
+        <link rel="stylesheet" href="holberton_school-icon/style.css">
+        <title>Holberton School - Headphone Company</title>
+    </head>
+    <body>
+        <header>
+            <input id="header-nav-toggle" name="header-nav-toggle" type="checkbox">
+            <label id="hamburger-button" for="header-nav-toggle" aria-label="toggle header nav"></label>
+            <img class="logo" src="images/logo_headphones.png" alt="Headphones brand logo">
+            <nav>
+                <ul>
+                    <li><a href="#">what we do</a></li>
+                    <li><a href="#">our results</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="banner-section">
+                <div id="banner-foreground">
+                    <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+                    <div id="subtitle-and-button">
+                        <p id="subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+                        <button class="call-to-action-button">CALL TO ACTION</button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </section>
+            <section id="what-we-do-section">
+                <div class="section-container">
+                    <header>
+                        <h2>What we do...</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </header>
+                    <ul>
+                        <div class="row">
+                            <li>
+                                <span class="font-icon"></span>
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </li>
+                            <li>
+                                <span class="font-icon"></span>
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </li>
+                        </div>
+                        <div class="row">
+                            <li>
+                                <span class="font-icon"></span>
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </li>
+                            <li>
+                                <span class="font-icon"></span>
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section id="results-section">
+                <div class="section-container">
+                    <header>
+                        <h2>Our results speak for themselves</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </header>
+                    <ul class="results">
+                        <div class="row">
+                            <li class="result">
+                                <h3>+2%</h3>
+                                <p>Lorem ipsum dolor</p>
+                            </li>
+                            <li class="result">
+                                <h3>+2%</h3>
+                                <p>Lorem ipsum dolor</p>
+                            </li>
+                        </div>
+                        <div class="row">
+                            <li class="result">
+                                <h3>+2%</h3>
+                                <p>Lorem ipsum dolor</p>
+                            </li>
+                            <li class="result">
+                                <h3>+2%</h3>
+                                <p>Lorem ipsum dolor</p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact-us-section">
+                <h2>Contact us</h2>
+                <form name="your-message-form" id="inputs">
+                    <input name="Name" type="text"  required aria-required="true" placeholder="Name">
+                    <input name="Email" type="email"  required aria-required="true" placeholder="Email" autocomplete="email">
+                    <input name="Message" type="text"  required aria-required="true" placeholder="Message">
+                </form>
+                <button class="call-to-action-button" form="inputs">CALL TO ACTION</button>
+            </section>
+        </main>
+        <footer>
+            <div class="section-container">
+                <div id="footer-content">
+                    <img class="logo" src="images/logo_headphones.png" alt="Headphones brand logo">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="font-icon" aria-label="our Facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font-icon" aria-label="our Twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="font-icon" aria-label="our Instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p id="copyright">©headphones 2020</p>
             </div>
-            <div class="wwd-card">
-              <span class="icon"></span>
-              <h2 class="wwd-subtitle">Lorem ipsum</h2>
-              <p class="wwd-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-            <div class="wwd-card">
-              <span class="icon"></span>
-              <h2 class="wwd-subtitle">Lorem ipsum</h2>
-              <p class="wwd-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-            <div class="wwd-card">
-              <span class="icon"></span>
-              <h2 class="wwd-subtitle">Lorem ipsum</h2>
-              <p class="wwd-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="results">
-        <div class="results-container">
-          <h1 class="title-1">Our results speak for themselves</h1>
-          <p class="paragraph-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-          <div class="stadistics">
-            <div class="penta">
-              <h1 class="title-1">+2%</h1>
-              <p class="paragraph-1">Lorem ipsum dolor</p>
-            </div>
-            <div class="penta">
-              <h1 class="title-1">+2%</h1>
-              <p class="paragraph-1">Lorem ipsum dolor</p>
-            </div>
-            <div class="penta">
-              <h1 class="title-1">+2%</h1>
-              <p class="paragraph-1">Lorem ipsum dolor</p>
-            </div>
-            <div class="penta">
-              <h1 class="title-1">+2%</h1>
-              <p class="paragraph-1">Lorem ipsum dolor</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="contact-container">
-          <h1 class="title-2">Contact us</h1>
-          <form>
-            <input type="text" name="name" placeholder="Name" />
-            <input type="email" name="email" placeholder="Email" />
-            <input type="text" name="message" placeholder="Your message" />
-          </form>
-          <button class="btn-primary">CALL TO ACTION</button>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <img src="/images/logo_headphones.png" alt="logo" />
-        <div class="icons">
-          <a class="social-icon" href="#"></a>
-          <a class="social-icon" href="#"></a>
-          <a class="social-icon" href="#"></a>
-        </div>
-      </div>
-      <p class="copyright">©headphones 2020</p>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>
